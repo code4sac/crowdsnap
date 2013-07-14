@@ -1,0 +1,12 @@
+<div id="info-window-content">
+<h3>Are you sure you would like to add this point?</h3>
+<!--
+<div>Latitue: <%= params[:lat] %></div>
+<br/>
+<div>Longitude: <%= params[:lon] %></div>
+-->
+<h4>Name of point</h4>
+<input type="text" name="point_name" id="point_name" />
+<button onClick="confirmPoint('<%= params[:lon] %>', '<%= params[:lat] %>');">Yes</button>
+<button onClick="rejectPoint();">No</button>
+</div>

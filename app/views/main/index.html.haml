@@ -1,0 +1,16 @@
+#page1{:'data-role' => 'page'}
+  #mypanel{:'data-role' => 'panel'}
+    %button{:onClick => 'showCrosshairs()'}
+  #info-panel{:'data-role' => 'panel', :'data-position' => 'right'}
+  #header{:'data-theme' => 'a', :'data-role' => 'header'}
+    %h3 Crowd Snap
+    %a{:'data-icon' => 'bars', :'data-iconpos' => 'notext', :'data-shadow' => 'false', :'data-iconshadow' => 'false', :href => '#mypanel'} Pane l
+    %a{:'data-role' => 'button', :href => '#', :class => 'ui-bnt-right', :onClick => 'setPoint();'} Set Point
+  #content{:'data-role' => 'content'}
+    #ch_circle
+    #ch_hline
+    #ch_vline
+    #OSMap
+  #footer{:'data-role' => 'footer', :'data-theme' => 'a', :'data-position' => 'fixed'}
+    %a{:'data-icon' => 'home', :'data-iconpos' => 'notext', :'data-shadow' => 'false', :'data-iconshadow' => 'false', :onClick => 'getCurrentLoc()'} Geolocate
+    %h3 Footer
